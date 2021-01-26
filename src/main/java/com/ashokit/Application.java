@@ -10,17 +10,17 @@ import com.ashokit.beans.Car;
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.ashok","com.ashokit"})// it's overriding default ComponentScaning 
 public class Application {
-//change priority task 12pm no 102
+
 	public static void main(String[] args) {
-		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
-		Car car = context.getBean(Car.class);
-		car.getClass();
-		System.out.println(car.getClass());
+	 SpringApplication.run(Application.class, args);
+		
 	}
 	
 	public void displayMessage()
 	{
 		//making change 8am task
+		int a=10;
+		int b=20;
 		System.out.println("Stash in not complate task");
 	}
 }
