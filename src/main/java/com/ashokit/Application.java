@@ -15,6 +15,6 @@ public class Application {
 	public void displayMessage()
 	{
 		//making change 8am task
-		System.out.println("Stash in complate task");
+		System.out.println("Stash in not complate task");
 	}
 }
