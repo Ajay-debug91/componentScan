@@ -12,7 +12,10 @@ import com.ashokit.beans.Car;
 public class Application {
 
 	public static void main(String[] args) {
-	 SpringApplication.run(Application.class, args);
+	 ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
+	 Car car = context.getBean(Car.class);
+		car.getClass();
+		System.out.println(car.getClass());
 		
 	}
 	
